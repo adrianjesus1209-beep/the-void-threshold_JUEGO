@@ -1,4 +1,5 @@
 LOCAL_NO_SUBIR/
+/imagenes/
 api/config_db.php
 database/base_datos_threshold.sql
 *.log

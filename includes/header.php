@@ -26,7 +26,7 @@
       },
     }
   </script>
-  <link rel="icon" id="favicon" href="<?=$base?>uploads/imagenes/logo_oscuro.png" type="image/png">
+  <link rel="icon" id="favicon" href="<?=$base?>uploads/imagenes/favicon.png" type="image/png">
   <link rel="stylesheet" href="<?=$base?>css/estilos.css">
   <script>
     (function() {
@@ -34,11 +34,10 @@
       var favicon = document.getElementById('favicon');
       if (saved === 'light') {
         document.documentElement.classList.remove('dark');
-        if (favicon) favicon.href = '<?=$base?>uploads/imagenes/logo_claro.png';
       } else {
         document.documentElement.classList.add('dark');
-        if (favicon) favicon.href = '<?=$base?>uploads/imagenes/logo_oscuro.png';
       }
+      if (favicon) favicon.href = '<?=$base?>uploads/imagenes/favicon.png';
     })();
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -207,11 +206,10 @@
       const favicon = document.getElementById('favicon');
       if (theme === 'light') {
         document.documentElement.classList.remove('dark');
-        if (favicon) favicon.href = '<?=$base?>uploads/imagenes/logo_claro.png';
       } else {
         document.documentElement.classList.add('dark');
-        if (favicon) favicon.href = '<?=$base?>uploads/imagenes/logo_oscuro.png';
       }
+      if (favicon) favicon.href = '<?=$base?>uploads/imagenes/favicon.png';
       localStorage.setItem('theme', theme);
       updateThemeIcon();
     }

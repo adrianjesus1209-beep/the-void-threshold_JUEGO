@@ -933,7 +933,7 @@
             }
             if (cfg.multimedia.logo_oscuro) {
               const fav = document.getElementById('favicon');
-              if (fav) fav.href = cfg.multimedia.logo_oscuro;
+              if (fav) fav.href = 'uploads/imagenes/favicon.png';
             }
             if (cfg.multimedia.fotos && Array.isArray(cfg.multimedia.fotos)) {
               const carouselCards = document.querySelectorAll('#carousel-stage .carousel-card img');
